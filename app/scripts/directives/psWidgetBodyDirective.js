@@ -5,7 +5,7 @@ angular.module('psDashboard').directive('psWidgetBody',
 
         return {
 
-            templateUrl: 'ext-modules/psDashboard/psWidgetBodyTemplate.html',
+            templateUrl: 'views/ps/psWidgetBodyTemplate.html',
             link: function (scope, element, attrs) {
 
                 var newElement = angular.element(scope.item.template);
@@ -28,9 +28,9 @@ angular.module('psDashboard').directive('psWidgetBody',
                 scope.iconClicked = function () {
                     // Empty Body
                     // this function is used by ng-click in the template
-                    //so that icon clicks aren't interpreted by widgets 
+                    //so that icon clicks aren't interpreted by widgets
                 }
             }
         };
-       
+
     }]);

@@ -10,6 +10,6 @@ angular.module("psFramework").directive("psFramework", function () {
                 iconFile: '@'
             },
             controller: "psFrameworkController",
-            templateUrl: "ext-modules/psFramework/psFrameworkTempate.html"
+            templateUrl: "views/ps/psFrameworkTempate.html"
         };
     });

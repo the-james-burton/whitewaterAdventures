@@ -4,7 +4,7 @@ angular.module('psDashboard').directive('psDashboard', function () {
 
     return {
 
-        templateUrl: 'ext-modules/psDashboard/psDashboardTemplate.html',
+        templateUrl: 'views/ps/psDashboardTemplate.html',
         link: function (scope, element, attrs) {
 
             scope.addNewWidget = function (widget) {

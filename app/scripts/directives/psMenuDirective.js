@@ -6,7 +6,7 @@ angular.module('psMenu').directive('psMenu', ['$timeout', function ($timeout) {
 
         },
         transclude: true,
-        templateUrl: 'ext-modules/psMenu/psMenuTemplate.html',
+        templateUrl: 'views/ps/psMenuTemplate.html',
         controller: 'psMenuController',
         link: function (scope, el, attr) {
             var item = el.find('.ps-selectable-item:first');

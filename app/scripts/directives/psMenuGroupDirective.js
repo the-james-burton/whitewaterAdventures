@@ -9,7 +9,7 @@ angular.module('psMenu').directive('psMenuGroup', function () {
             label: '@',
             icon:  '@'
         },
-        templateUrl: 'ext-modules/psMenu/psMenuGroupTemplate.html',
+        templateUrl: 'views/ps/psMenuGroupTemplate.html',
         link: function (scope, el, attrs, ctrl) {
             scope.isOpen = false;
             scope.closeMenu = function () {
@@ -21,9 +21,9 @@ angular.module('psMenu').directive('psMenuGroup', function () {
 
                 if (el.parents('.ps-subitem-section').length == 0)
                     scope.setSubmenuPosition();
-                 
+
                 ctrl.setOpenMenuScope(scope);
-                    
+
             };
             scope.isVertical = function () {
                 return ctrl.isVertical() || el.parents('.ps-subitem-section').length > 0;
