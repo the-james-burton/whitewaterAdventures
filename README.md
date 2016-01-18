@@ -1,7 +1,12 @@
-# whitewaterAdventures 
+# whitewater-adventures
 
-Pluralsight tutorial by Mark Zamoyta. 
+This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
+version 0.12.1.
 
-Building a Single Page Application with Angular JS. 
+## Build & development
 
-(Called Framworkstgd on local machine)
+Run `grunt` for building and `grunt serve` for preview.
+
+## Testing
+
+Running `grunt test` will run the unit tests with karma.
