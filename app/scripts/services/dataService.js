@@ -1,4 +1,4 @@
-﻿"use strict";
+﻿'use strict';
 
 angular.module('app').factory('dataService',
     ['$timeout',
@@ -96,23 +96,24 @@ angular.module('app').factory('dataService',
                 id: 5002,
                 name: 'Don Morgan',
                 location: 'Black Creek',
-                image: 'employee-don.png'
+                image: 'employee-andy.png'
             },
             {
                 id: 5003,
                 name: 'Tom Sullivan',
                 location: 'Ausable River',
-                image: 'employee-tom.png'
+                image: 'employee-andy.png'
             },
             {
                 id: 5004,
                 name: 'Kathy Fletcher',
                 location: 'Batten Kill',
-                image: 'employee-kathy.png'
+                image: 'employee-april.png'
             }
         ];
 
         var getLocations = function () {
+            //simulate real request by using half second timeout
             return $timeout(function () {
                 return locations;
             }, 500);
@@ -120,15 +121,18 @@ angular.module('app').factory('dataService',
 
         var getLocation = function (id) {
             var timeout = $timeout(function () {
+                //uncomment to force error
                 //$timeout.cancel(timeout);
                 //return undefined;
-                for (var i = 0; i < locations.length; i++)
-                    if (locations[i].id == id)
+                for (var i = 0; i < locations.length; i++) {
+                    if (locations[i].id === id) {
                         return locations[i];
+                    }
+                }
                 return undefined;
-           }, 2000);
+            }, 500);
 
-           return timeout;
+            return timeout;
         };
 
         var getEmployees = function () {
@@ -139,9 +143,11 @@ angular.module('app').factory('dataService',
 
         var getEmployee = function (id) {
             return $timeout(function () {
-                for (var i = 0; i < employees.length; i++)
-                    if (employees[i].id == id)
+                for (var i = 0; i < employees.length; i++) {
+                    if (employees[i].id === id) {
                         return employees[i];
+                    }
+                }
                 return undefined;
             }, 300);
         };

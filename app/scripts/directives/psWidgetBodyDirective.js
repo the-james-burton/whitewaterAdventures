@@ -1,15 +1,14 @@
-﻿"use strict";
+﻿'use strict';
 
 angular.module('psDashboard').directive('psWidgetBody',
-    ['$compile', '$modal',function ($compile, $modal) {
-
+    ['$compile', '$modal',
+    function ($compile, $modal) {
         return {
-
             templateUrl: 'views/ps/psWidgetBodyTemplate.html',
             link: function (scope, element, attrs) {
-
                 var newElement = angular.element(scope.item.template);
                 element.append(newElement);
+                //angular has no knowledge of what goes on in jquery functions so you have to call $compile to updaate the view
                 $compile(newElement)(scope);
 
                 scope.close = function () {
@@ -25,12 +24,13 @@ angular.module('psDashboard').directive('psWidgetBody',
                     $modal.open(options);
                 };
 
+                //use empty function so angular handles click event and allows menu to be opened on touch devices
                 scope.iconClicked = function () {
-                    // Empty Body
-                    // this function is used by ng-click in the template
-                    //so that icon clicks aren't interpreted by widgets
-                }
+                    //empty body
+                    //this function is used by ng-click in the template
+                    //so that icon clicks aren't intercepted by widgets
+                };
             }
         };
-
-    }]);
+    }
+    ]);

@@ -1,10 +1,11 @@
-﻿"use strict"
+﻿'use strict';
+
 angular.module('psMenu').directive('psMenuItem', function () {
     return {
         require: '^psMenu',
         scope: {
             label: '@',
-            icon:  '@',
+            icon: '@',
             route: '@'
         },
         templateUrl: 'views/ps/psMenuItemTemplate.html',
@@ -27,5 +28,5 @@ angular.module('psMenu').directive('psMenuItem', function () {
                 });
             });
         }
-    }
-})
+    };
+});

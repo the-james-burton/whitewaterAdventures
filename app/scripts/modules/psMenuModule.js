@@ -1,3 +1,3 @@
-﻿
-"use strict";
-angular.module("psMenu", ['ngAnimate']);
+﻿'use strict';
+
+angular.module('psMenu', ['ngAnimate']);
