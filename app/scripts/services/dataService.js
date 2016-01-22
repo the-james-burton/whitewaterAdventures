@@ -12,7 +12,7 @@ angular.module('app').factory('dataService',
                 guides: 20,
                 rafts: 18,
                 vests: 200,
-                image: 'river1.png'
+                image: 'river1.jpg'
             },
             {
                 id: 1001,
@@ -21,7 +21,7 @@ angular.module('app').factory('dataService',
                 guides: 36,
                 rafts: 22,
                 vests: 250,
-                image: 'river2.png'
+                image: 'river2.jpg'
             },
             {
                 id: 1002,
@@ -30,7 +30,7 @@ angular.module('app').factory('dataService',
                 guides: 56,
                 rafts: 40,
                 vests: 500,
-                image: 'river3.png'
+                image: 'river3.jpg'
             },
             {
                 id: 1003,
@@ -39,7 +39,7 @@ angular.module('app').factory('dataService',
                 guides: 8,
                 rafts: 10,
                 vests: 40,
-                image: 'river4.png'
+                image: 'river4.jpg'
             },
             {
                 id: 1004,
@@ -48,7 +48,7 @@ angular.module('app').factory('dataService',
                 guides: 8,
                 rafts: 8,
                 vests: 100,
-                image: 'river1.png'
+                image: 'river1.jpg'
             },
             {
                 id: 1005,
@@ -57,7 +57,7 @@ angular.module('app').factory('dataService',
                 guides: 22,
                 rafts: 12,
                 vests: 230,
-                image: 'river2.png'
+                image: 'river2.jpg'
             },
             {
                 id: 1006,
@@ -66,7 +66,7 @@ angular.module('app').factory('dataService',
                 guides: 20,
                 rafts: 24,
                 vests: 420,
-                image: 'river3.png'
+                image: 'river3.jpg'
             },
             {
                 id: 1007,
@@ -75,7 +75,7 @@ angular.module('app').factory('dataService',
                 guides: 12,
                 rafts: 8,
                 vests: 225,
-                image: 'river4.png'
+                image: 'river4.jpg'
             }
         ];
 
@@ -84,31 +84,31 @@ angular.module('app').factory('dataService',
                 id: 5000,
                 name: 'Andy Chatterton',
                 location: 'Raquette River',
-                image: 'employee-andy.png'
+                image: 'employee-andy.jpg'
             },
             {
                 id: 5001,
                 name: 'April Donaldson',
                 location: 'Saranac River',
-                image: 'employee-april.png'
+                image: 'employee-april.jpg'
             },
             {
                 id: 5002,
                 name: 'Don Morgan',
                 location: 'Black Creek',
-                image: 'employee-andy.png'
+                image: 'employee-andy.jpg'
             },
             {
                 id: 5003,
                 name: 'Tom Sullivan',
                 location: 'Ausable River',
-                image: 'employee-andy.png'
+                image: 'employee-andy.jpg'
             },
             {
                 id: 5004,
                 name: 'Kathy Fletcher',
                 location: 'Batten Kill',
-                image: 'employee-april.png'
+                image: 'employee-april.jpg'
             }
         ];
 
