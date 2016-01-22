@@ -9,4 +9,4 @@ version 0.12.1. As well as the upstream fork, it also uses code from [bklep246/W
 
 Run `grunt serve` for preview at http://localhost:9000. It does work but I think some of it is incomplete. The user profile drop down menu does not work.  I need to re-watch the [pluralsight tutorial](https://app.pluralsight.com/library/courses/building-spa-framework-angularjs) on which this is based and see if I can fill in any gaps, if there are any. The dashboard, however, does seem to work which is the main reason I created this project.
 
-Running `grunt build --force` is necessary as some of the png files appear to cause problems for imagemin. I may replace the images if I get time.
+Run `grunt build` to create the distributable.
