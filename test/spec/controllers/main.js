@@ -3,21 +3,22 @@
 describe('Controller: appController', function () {
 
   // load the controller's module
-  beforeEach(module('whitewaterAdventuresApp'));
+  beforeEach(module('app'));
 
-  var MainCtrl,
+  var AppCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('appController', {
+    AppCtrl = $controller('appController', {
       $scope: scope
       // place here mocked dependencies
     });
   }));
 
-  // it('should attach a list of awesomeThings to the scope', function () {
-  //  expect(MainCtrl.awesomeThings.length).toBe(3);
-  // });
+  // there are no tests...
+  it('should just be true', function () {
+    expect(true).toBe(true);
+   });
 });

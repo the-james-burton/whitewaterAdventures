@@ -1,4 +1,4 @@
-# whitewater-adventures
+# whitewater-adventures  [![Build Status](https://api.travis-ci.org/the-james-burton/whitewaterAdventures.svg?branch=master)](https://travis-ci.org/the-james-burton/whitewaterAdventures)
 
 Based on the pluralsight course [Building a SPA framework using AngularJS](https://app.pluralsight.com/library/courses/building-spa-framework-angularjs) by Mark Zamoyta.
 
